@@ -1,10 +1,12 @@
-# added on 10-08-2026
+# added on 23-08-2026
 # // title: ai triage module pseudocode
 # function fetch_alerts()
+def fetch_alerts():
 #   // initialize a list of mock SIEM alerts with id, type, source_ip, and timestamp
+    alerts = [id, type, source_ip, timestamp]
 #   // return the list of alerts
 # end function
-
+return alerts
 # function analyze_alert_with_ai(alert)
 #   // generate a random risk score between 1 and 100
 #   // if risk score is greater than 75
