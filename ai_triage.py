@@ -7,15 +7,23 @@ def fetch_alerts():
 #   // return the list of alerts
 # end function
 return alerts
+#Added on 25-08-2026
 # function analyze_alert_with_ai(alert)
+def analyze_alert_with_ai(alert):
 #   // generate a random risk score between 1 and 100
+    risk_score = random.randint(1,100)
 #   // if risk score is greater than 75
+    if risk_score > 75:
 #   //    set decision to "Escalate"
+        decision = "Escalate"
 #   // else
+    else:
 #   //    set decision to "Dismiss"
+        decision = "Dismiss"
 #   // append the risk score and decision to the alert
 #   // return the modified alert
 # end function
+print(decision)
 
 # function main()
 #   // alerts = fetch_alerts()
