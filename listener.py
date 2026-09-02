@@ -36,7 +36,7 @@ def start_ghost_sensor(port=8080): # Changed to 8080 to match Docker
                 print(f"[*] Connection from {addr[0]} | Payload: {request.strip()[:20]}...")
                 analysis = analyze_threat(addr[0], request, port)
                 
-                # Prepare data for dashboard
+                # Prepare data for dashboard added on 02-09-2026
                 log_entry = {
                     "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "source_ip": addr[0],
